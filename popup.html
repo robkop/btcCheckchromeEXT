@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style/my.css">
+
+    <title>Bitcoin exchange rate checker</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary" id="usdButton">USD</button>
+            <button type="button" class="btn btn-secondary" id="eurButton">EUR</button>
+            <button type="button" class="btn btn-secondary" id="plnButton">PLN</button>
+            <button type="button" class="btn btn-secondary" id="gpbButton">GBP</button>
+            <button type="button" class="btn btn-info" id="saveAmountButton">Save my amount</button>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon" id="btnGroupAddon">BTC</span>
+            <input type="number" id="myBTCamount" class="form-control" placeholder="0,45009" aria-label="BTC Amount" aria-describedby="btnGroupAddon">
+        </div>
+        <div class="alert alert-success resultDiv" id="usdDIV" role="alert">
+            <p id="usd" class='rsp'></p>
+            <p id="usdResult"></p>
+        </div>
+        <div class="alert alert-success resultDiv" id="eurDIV" role="alert">
+            <p id="eur" class='rsp'></p>
+            <p id="eurResult"></p>
+        </div>
+        <div class="alert alert-success resultDiv" id="plnDIV" role="alert">
+            <p id="pln" class='rsp'></p>
+            <p id="plnResult"></p>
+        </div>
+        <div class="alert alert-success resultDiv" id="gpbDIV" role="alert">
+            <p id="gbp" class='rsp'></p>
+            <p id="gbpResult"></p>
+        </div>
+
+    </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
